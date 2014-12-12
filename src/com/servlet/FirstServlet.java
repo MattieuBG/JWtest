@@ -23,7 +23,7 @@ public void doGet( HttpServletRequest request, HttpServletResponse response ) th
 	out.println("<html>");
 	out.println("<head>");
 	out.println("<meta charset=\"utf-8\" />");
-	out.println("<title>NEW</title>");
+	out.println("<title>NEW test</title>");
 	out.println("</head>");
 	out.println("<body>");
 	out.println("<p>Ceci est une page générée depuis une servlet.</p>");
