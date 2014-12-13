@@ -7,11 +7,11 @@
 
 <servlet>
 	<servlet-name>FirstServlet</servlet-name>
-	<servlet-class>com.servlet</servlet-class>
+	<servlet-class>com.servlet.FirstServlet</servlet-class>
 
 	<init-param>
 		<param-name>auteur</param-name> 
-		<param-value>Coyote</param-value> 
+		<param-value>BERNAR_X</param-value> 
 	</init-param>
 
 	<load-on-startup>1</load-on-startup>

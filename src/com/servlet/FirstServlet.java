@@ -16,10 +16,10 @@ public class FirstServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
+	
 	response.setContentType("text/html");
 	response.setCharacterEncoding( "UTF-8" );
 	PrintWriter out = response.getWriter();
-	out.println("<!DOCTYPE html>");
 	out.println("<html>");
 	out.println("<head>");
 	out.println("<meta charset=\"utf-8\" />");
@@ -29,6 +29,10 @@ public void doGet( HttpServletRequest request, HttpServletResponse response ) th
 	out.println("<p>Ceci est une page générée depuis une servlet.</p>");
 	out.println("</body>");
 	out.println("</html>");
-
+	out.println("<!DOCTYPE html>");
+	
+	String message = "Transmission de variables : OK !";
+	request.setAttribute("test", message);
+	this.getServletContext().getRequestDispatcher( "/WEB-INF/JSPFile.jsp" ).forward( request, response );
     }
 }
